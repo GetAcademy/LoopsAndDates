@@ -1,0 +1,22 @@
+1. Tallpuslespill uten løkke
+
+2. Intro løkker i Console
+
+3. Telle bokstaver i en tekst
+
+4. Snu en tekst
+
+5. Tallpuslespill med løkke
+
+6. "Løkker er best når vi ikke vet hvor mange ganger noe skal gjentas"
+
+7. Intro datoer i Console
+    - Date-objekter
+    - ISO-string
+    - visnings-string
+    - millisekunder siden 1.1.1970
+    - telle dager, uker, osv  
+
+8. Enkel kalender, hoppe dager, uker, måneder
+
+(Veien videre er Lister, Enhetstesting, Objekter)
