@@ -4,8 +4,6 @@
 
 3. Telle bokstaver i en tekst
 
-4. Snu en tekst
-
 5. Tallpuslespill med løkke
 
 6. "Løkker er best når vi ikke vet hvor mange ganger noe skal gjentas"
