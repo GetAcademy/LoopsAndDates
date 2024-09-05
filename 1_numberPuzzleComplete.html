@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #app {
+        #board {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             grid-template-rows: repeat(3, 100px);
         }
 
-        #app>div {
+        #board>div {
             border: 2px solid gray;
             display: flex;
             justify-content: center;
@@ -28,13 +28,15 @@
 
     <script>
         // model
-        let board = '7354 1286';
+        let board;
 
         // view
-        updateView();
+        startGame();
         function updateView() {
-            document.getElementById('app').innerHTML =
-                createSquareHtml(0)
+
+            document.getElementById('app').innerHTML = createWonHtml()
+                + '<div id="board">'
+                + createSquareHtml(0)
                 + createSquareHtml(1)
                 + createSquareHtml(2)
                 + createSquareHtml(3)
@@ -43,6 +45,17 @@
                 + createSquareHtml(6)
                 + createSquareHtml(7)
                 + createSquareHtml(8)
+                + '</div>';
+        }
+
+        function createWonHtml() {
+            if (board != '12345678 ') return ''
+            return /*HTML*/`
+                <div style="color: green">
+                    Gratulerer, du har løst puslespillet!
+                    <button onclick="startGame()">Start på nytt</button>
+                </div>
+            `;
         }
 
         function createSquareHtml(index) {
@@ -68,7 +81,12 @@
             let rowIndex2 = Math.floor(index2 / 3);
             let colIndex2 = index2 % 3;
             return (colIndex1 == colIndex2 && Math.abs(rowIndex2 - rowIndex1) == 1)
-                || (rowIndex1 == rowIndex2 && Math.abs(colIndex1 - colIndex2) == 1);            
+                || (rowIndex1 == rowIndex2 && Math.abs(colIndex1 - colIndex2) == 1);
+        }
+
+        function startGame() {
+            board = '1234567 8';
+            updateView();
         }
     </script>
 </body>
