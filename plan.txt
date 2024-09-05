@@ -10,13 +10,13 @@
 
 6. "Løkker er best når vi ikke vet hvor mange ganger noe skal gjentas"
 
-7. Intro datoer i Console
+7. Intro innebygd funksjonalitet for datoer i Console
     - Date-objekter
     - ISO-string
     - visnings-string
     - millisekunder siden 1.1.1970
     - telle dager, uker, osv  
 
-8. Enkel kalender, hoppe dager, uker, måneder
+8. Enkel kalender, hoppe dager, uker, måneder, timer
 
 (Veien videre er Lister, Enhetstesting, Objekter)
